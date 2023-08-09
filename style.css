@@ -2,7 +2,10 @@
 body {
     margin: 0;
     padding: 0px;
+    background: linear-gradient(180deg, rgba(12, 112, 242, 0.5) 19%, rgba(12, 112, 242, 0) 25%), #303030;
+    background-repeat: no-repeat;
 }
+
 
 /*NAV--------------------------------------------------------------------------------*/
 #principal {
@@ -15,9 +18,9 @@ body {
     border-bottom: 2px solid #BABABA;
 }
 
-    #principal div a:hover {
-        color: #cccccc;
-    }
+#principal div a:hover {
+    color: #cccccc;
+}
 
 #menu {
     display: flex;
@@ -41,4 +44,8 @@ body {
     margin-right: 5%;
     font-weight: 600;
     box-shadow: 5px 4px 4px rgba(12, 112, 242, 0.40);
+    cursor: pointer;
 }
+
+
+/*NAV--------------------------------------------------------------------------------*/
