@@ -28,7 +28,7 @@ body {
 }
 
 #principal div a:hover {
-    color: #cccccc;
+    color: var(--cinza-hover);
 }
 
 #menu {
@@ -62,7 +62,8 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 100px 0px 100px 0px;
+    margin-top: 60px;
+    padding-bottom: 200px;
 }
 
 header {
@@ -71,15 +72,16 @@ header {
 }
 
 header h1 {
-    font-size: 70px;
+    font-size: 50px;
     font-weight: 800;
-    margin-bottom: 30px;
+    padding: 0;
+    margin: 0;
     text-align: center;
 }
 
 header h2 {
     text-align: center;
-    font-size: 33px;
+    font-size: 20px;
     font-weight: 700;
     margin-bottom: 100px;
     font-weight: bold;
@@ -96,7 +98,7 @@ header h2 {
 form {
     color: white;
     font-family: var(--fonte-padrao);
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 600;
     width: 600px;
 }
@@ -110,14 +112,15 @@ form {
 form input {
     border-radius: 10px;
     border: 0px;
-    height: 28px;
-    font-size: 20px;
+    height: 18px;
+    font-size: 14px;
     padding: 8px;
     background-color: rgba(255, 255, 255, 0.9);
 }
 
 form label {
     margin: 10px 0px 10px 0px;
+    font-size: 18px;
 }
 
 form input::placeholder {
@@ -125,7 +128,7 @@ form input::placeholder {
 }
 
 #checkbox-itens label {
-    font-size: 27px;
+    font-size: 14px;
 }
 
 #checkbox-itens {
@@ -135,17 +138,112 @@ form input::placeholder {
 }
 
 input[type="checkbox"] {
-    transform: scale(1.7);
+    transform: scale(1.2);
 }
 
 input[type="submit"] {
     background-color: rgba(12, 112, 242, 0.9);
     width: 100%;
     height: 46px;
-    font-size: 32px;
+    font-size: 18px;
     color: white;
     font-weight: 600;
     margin-top: 70px;
     box-shadow: 0px 6px 4px 0px rgba(12, 112, 242, 0.25);
     cursor: pointer;
+}
+
+/*FOOTER--------------------------------------------------------------------------------*/
+footer {
+width: 100%;
+background-color: var(--azul-dnc);
+color: white;
+}
+
+
+/*LINHA1-------------------------------------*/
+footer .linha1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h5{
+    text-align: center;
+    background-color: var(--preto-dnc);
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--fonte-padrao);
+    font-weight: 800;
+    font-size: 18px;
+    border-radius: 7px;
+    padding: 5px 10px 5px 10px;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--fonte-padrao);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+footer ul li {
+    text-align: center;
+    margin: 25px 0px 25px 0px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+footer ul li a:hover {
+    color: var(--cinza-hover);
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    padding-top: 40px;
+}
+
+footer .endereco {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bolder;
+    width: 30%;
+    font-family: var(--fonte-padrao);
+    line-height: 1.4;
+}
+
+/*LINHA1-------------------------------------*/
+.linha2 {
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    height: 35px;
+    padding: 10px;
+}
+
+.linha2 a {
+    text-decoration: none;
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-weight: 600;
+    font-size: 18px; 
+    padding: 5px;
+}
+
+.linha2 a:first-child {
+    border-right: 2.5px solid;
+}
+
+.linha2 a:hover {
+    cursor: pointer;
+    color: var(--cinza-hover);
 }
