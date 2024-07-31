@@ -1,6 +1,7 @@
-* {
+body {
     margin: 0;
     padding: 0px;
+    background:linear-gradient(180deg, rgba(12, 112, 242, 0.5) 10%, rgba(12, 112, 242, 0) 25%), #303030;
 }
 
 /* ______________________________________ */
@@ -19,7 +20,7 @@
     #menu {
         display: flex;
         width: 45%;
-        justify-content: space-around ;
+        justify-content: space-around;
         align-items: center;
 
         margin-left: 5%;
